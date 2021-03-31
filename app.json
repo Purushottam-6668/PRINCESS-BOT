@@ -1,0 +1,195 @@
+{
+      "name": " 𓊈𒆜𝙿𝚁𝙸𝙽𝙲𝙴𝚂𝚂𒆜𓊉",
+      "logo": "https://telegra.ph/file/8f46407de048356937310.jpg",
+      "description": " 💫Modular And Fastest Telegram Group Manager Bot💫.",
+      "keywords": [
+         "telegram",
+         "anime",
+         "group",
+         "manager",
+         " 𓊈𒆜𝙿𝚁𝙸𝙽𝙲𝙴𝚂𝚂𒆜𓊉"
+      ],   
+   "repository": "https://github.com/PURHSHOTTAM/PRINCESS-BOT",
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "env": {
+      "TOKEN": {
+         "description": "💫Your bot token. Get one from➡️ @BotFather duh",
+         "required": true,
+         "value": ""
+      },
+      "API_ID": {
+         "description": "💫Get API_ID from➡️ my.telegram.org, used for telethon based modules.💫",
+         "required": true,
+         "value": ""
+      },
+      "API_HASH": {
+         "description": "💫Get API_HASH from ➡️ my.telegram.org, used for telethon based modules.💫",
+         "required": true,
+         "value": ""
+      },    
+      "SQLALCHEMY_DATABASE_URI": {
+         "description": "💫Your postgres sql db, empty this field if you dont have one.💫",
+         "required": false,
+         "value": "sqldbtype://username:pw@hostname:port/db_name"
+      },      
+      "OWNER_ID": {
+         "description": "💫Your user ID as an integer like this -💫",
+         "required": true,
+         "value": "1711642802"
+      },
+      "HEROKU_API_KEY": {
+        "description": "💫Your Heroku API key, get it from➡️ 'https://dashboard.heroku.com/account'💫",
+        "value": ""
+      },
+      "HEROKU_APP_NAME": {
+        "description": "💫Enter the Heroku app name here (Must an exact same name with your input above).💫",
+        "required": false
+      },
+      "OWNER_USERNAME": {
+         "description": "💫Your username without the @💫",
+         "value": "Mr_Purushottam_M"
+      },
+      "SUPPORT_CHAT": {
+         "description": "💫Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to @PRINCESS_SUPPORT support than consider you made an enemy.💫",
+         "required": true,
+         "value": "http://t.me/PRINCESS_SUPPORT"
+      },
+      "MONGO_DB_URI": {
+         "description": "💫 Required for database connections.💫",
+         "required": false,
+         "value": ""
+      },
+      "IBM_WATSON_CRED_URL": {
+         "description": "💫 This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html 💫",
+         "required": false
+     },
+     "IBM_WATSON_CRED_PASSWORD": {
+        "description": "💫This is required for the speech to text module. Get your PASSWORD from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html💫",
+        "required": false
+     },
+     "EVENT_LOGS": {
+         "description": "💫 Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'💫",
+         "required": true,
+         "value": "-1001133690592"
+      },
+      "JOIN_LOGGER": {
+         "description": "💫 A channel where bot will print who added it to what group, useful during debugging or spam handling.💫 ",
+         "required": true,
+         "value": "-1001133690592"
+      },      
+      "CASH_API_KEY": {
+         "description": "💫Required for currency converter. Get yours from➡️ https://www.alphavantage.co/support/#api-key 💫",
+         "required": true,
+         "value": "EBJ6ZCCT6NI9Z1VH"
+      },
+      "TIME_API_KEY": {
+         "description": "💫Required for timezone information. Get yours from➡️ https://timezonedb.com/api 💫",
+         "required": true,
+         "value": "4P4L8MY97A7K"
+      },
+      "API_OPENWEATHER": {
+        "description": "💫Get your own APPID from➡️ https://api.openweathermap.org/data/2.5/weather 💫",
+        "value": "7be38eeb45aa07a3a183ea3c5015620f",
+        "required": false
+      },
+      "DEV_USERS": {
+         "description": "💫ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother @PRINCESS_SUPPORT support then keep the current ID's here at they are and add yours.💫,",
+         "required": false,
+         "value": "1711642802 1633768933"
+      },
+      "sw_api": {
+         "description": "💫 Spamwatch API Token, Get one from @SpamWatchBot.💫",
+         "required": false,
+         "value": ""
+      }, 
+      "STRICT_GBAN": {
+         "description": "💫Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.💫",
+         "value": "True"
+      },
+      "DRAGONS": {
+         "description": "💫A space separated list of user IDs who you want to assign as sudo users.💫",
+         "required": false,
+         "value": "1711642802 1633768933"
+      },
+      "DEMONS": {
+         "description": "💫 A space separated list of user IDs who you wanna assign as support users(gban perms only).💫",
+         "required": false,
+         "value": "1711642802 1633768933"
+      },
+      "TIGERS": {
+         "description": "💫 A space separated list of user IDs who you wanna assign as tiger users.💫",
+         "required": false,
+         "value": "1711642802 1633768933"
+      },
+      "WOLVES": {
+         "description": "💫A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.💫",
+         "required": false,
+         "value": "1711642802 1633768933"
+      },
+      "ENV": {
+         "description": "💫Setting this to ANYTHING will enable environment variables. Leave it as it is💫",
+         "value": "ANYTHING"
+      },
+      "WEBHOOK": {
+         "description": "💫Setting this to ANYTHING will enable webhooks. If you dont know how this works leave it as it is💫 ",
+         "required": false,
+         "value": ""
+      },
+      "PORT": {
+         "description": "💫 Port to use for your webhooks. Better leave this as it is on heroku💫",
+         "required": false,
+         "value": ""
+      },
+      "URL": {
+         "description": "💫The Heroku App URL :-➡️  https://<appname>.herokuapp.com/💫",
+         "required": false,
+         "value": ""
+      },
+      "No_LOAD": {
+         "description": "Dont load these modules cause they shit, space separation💫",
+         "required": false,
+         "value": "rss"
+      }, 
+      "BL_CHATS": {
+         "description": "💫 List of chats you want blacklisted.💫",
+         "required": false,
+         "value": ""
+      },
+      "ALLOW_EXCL": {
+         "description": "💫 Set this to True if you want ! to be a command prefix along with /. Recommended is True💫",
+         "value": "True"
+      },
+      "DONATION_LINK": {
+         "description": "💫 Optional: link where you would like to receive donations. If you are a noob, better leave it linking to Purushottam 💫",
+         "required": false,
+         "value": "Https:/wwww.instagram.com/mr_purushottam_m/"
+      },
+      "DEL_CMDS": {
+         "description": "💫 Set this to True if you want to delete command messages from users who don't have the perms to run that command.💫 ",
+         "value": "True"
+      },
+      "AI_API_KEY": {
+      "description": "💫 Make your bot talk using Intellivoid's chatbot API, get your key from➡️ https://coffeehouse.intellivoid.net/💫",
+         "required": false,
+         "value": "ef6d80a30da73915ae970f8dbf2454ddba7190c1d5dcf4cd28c416785cdab3806d45be6d2d332ee7df363b9cd6fb00068cfe6e99f39ddfe028e61d7a542da478"
+   },      
+      "BAN_STICKER": {
+         "description": "💫 ID of the sticker you want to use when banning people.💫 ",
+         "required": false,
+         "value": ""
+      },
+      "WALL_API": {
+         "description": "💫 Required for wallpaper. Get your's from➡️ https://wall.alphacoders.com/💫",
+         "required": false,
+         "value": ""
+      }
+      
+   }
+}
